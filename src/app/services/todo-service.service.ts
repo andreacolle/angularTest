@@ -14,14 +14,14 @@ export class TodoServiceService {
   // todoo: Todo = {};
 
   getTodoList() {
-    return this.http.get<Todo[]>(`${this.baseUrl}/todos`);
+    return this.http.get<TodoComponent[]>(`${this.baseUrl}/todos`);
   }
 
   addTodo(postData: TodoComponent) {
     return this.http.post(`${this.baseUrl}/todos`,postData);
   }
 
-  updateTodo(id:number,postData: Todo) {
+  updateTodo(id:number,postData: TodoComponent) {
     return this.http.patch(`${this.baseUrl}/todos/${id}`, postData);
   }
 

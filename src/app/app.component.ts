@@ -28,14 +28,14 @@ export class AppComponent implements OnInit {
   }
 
   task = '';
-  todos: Todo[] = [];
+  todos: TodoComponent[] = [];
 
   checked = false;
 
-  updateTodo(e: CheckboxChangeEvent, todo: Todo) {
+  updateTodo(e: CheckboxChangeEvent, todo: TodoComponent) {
 
     // console.log(e, todo);
-    const todoId: number = todo.id;
+    let todoId: number = todo.id;
     this.todoService.updateTodo(todoId, todo).subscribe(
       response => {
         console.log(response);

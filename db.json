@@ -1,21 +1,29 @@
 {
   "todos": [
     {
+      "task": "suonare la chitarra",
+      "complete": true,
+      "id": 2
+    },
+    {
       "task": "giocare alla playstation",
       "complete": false,
-      "id": 1
+      "id": 3
     },
     {
-      "task": "fare questo e quello",
+      "task": "bere un bicchier d'acqua",
       "complete": false,
-      "id": 2,
-      "completed": true
+      "id": 4
     },
     {
-      "task": "fare i compiti di matematica",
+      "task": "mangiare un frutto",
       "complete": false,
-      "id": 3,
-      "completed": true
+      "id": 5
+    },
+    {
+      "task": "fare cose a caso",
+      "complete": true,
+      "id": 8
     }
   ]
 }

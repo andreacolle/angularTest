@@ -13,7 +13,7 @@ export class TodoComponent {
   //   this.complete = complete;
   // }
 
-  id?: number;
+  id!: number;
   task: string = '';
   complete: boolean = false;
   

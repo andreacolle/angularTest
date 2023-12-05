@@ -5,7 +5,7 @@
     <div class="m-2 flex">
       <div>
         <input type="text" pInputText [(ngModel)]="task" placeholder="Enter the new Todo" #todoTask="ngModel"
-          required />
+          required (keyup.enter)="addTodo(task)" />
         <!-- <div *ngIf="task.toLowerCase() === 'niente'">
             <p style="color: red;">Daje, sbrighete. Qualcosa oggi devi pur fare.</p>
           </div> -->
@@ -26,7 +26,7 @@
         <ng-template pTemplate="body" let-todo of todos>
           <tr>
             <td>{{ todo.task }}</td>
-            <td><p-checkbox [(ngModel)]="todo.completed" [binary]="true"
+            <td><p-checkbox [(ngModel)]="todo.complete" [binary]="true"
                 (onChange)="updateTodo($event,todo )"></p-checkbox></td>
             <td><p-button icon="pi pi-trash" (onClick)="deleteTodo(todo.id)"></p-button></td>
           </tr>
