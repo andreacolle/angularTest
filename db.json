@@ -1,0 +1,21 @@
+{
+  "todos": [
+    {
+      "task": "giocare alla playstation",
+      "complete": false,
+      "id": 1
+    },
+    {
+      "task": "fare questo e quello",
+      "complete": false,
+      "id": 2,
+      "completed": true
+    },
+    {
+      "task": "fare i compiti di matematica",
+      "complete": false,
+      "id": 3,
+      "completed": true
+    }
+  ]
+}
